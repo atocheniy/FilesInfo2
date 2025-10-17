@@ -7,6 +7,7 @@
             FilesInfo fi = new FilesInfo();
             fi.Load("F:\\Projects");
             fi.Save("info.txt");
+            Console.WriteLine(fi.ToString());
         }
     }
 }

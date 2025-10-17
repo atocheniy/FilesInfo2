@@ -10,7 +10,6 @@ namespace FilesInfoNamespace
     public class FilesInfo
     {
         public Dictionary<string, int> info = new Dictionary<string, int>();
-
         public FilesInfo() { }
 
         public void Load(string path)
@@ -21,6 +20,7 @@ namespace FilesInfoNamespace
                 if (info.ContainsKey(Path.GetExtension(file))) info[Path.GetExtension(file)]++;
                 else info[Path.GetExtension(file)] = 1;
             }
+            Console.WriteLine("123!");
         }
 
         public void Save(string path) 
